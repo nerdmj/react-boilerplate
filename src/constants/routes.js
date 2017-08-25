@@ -1,7 +1,3 @@
-/**
- * Created by swati on 13/7/17.
- */
-
 export const URL = {
     VOD : 'vod',
     SEE_ALL : "see-all",

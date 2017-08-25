@@ -1,5 +1,5 @@
 import { REQUEST_METHOD, CONTENT_TYPE } from '../constants';
-import ENV_CONFIG from './environmentConfig/index';
+import ENV_CONFIG from './environment/index';
 
 export const requestConfig = {
 

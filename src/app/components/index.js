@@ -23,11 +23,9 @@ class Main extends Component {
                     <Header />
 
                     <div className="main_container">
-                        <section className="body_container">
-                            <Switch>
-                                {createRoute(routes)}
-                            </Switch>
-                        </section>
+                        <Switch>
+                            {createRoute(routes)}
+                        </Switch>
                     </div>
 
                     <Footer />

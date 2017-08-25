@@ -2,7 +2,7 @@ import moment from 'moment';
 import _ from 'lodash';
 
 import { CONTENT_TYPE, CONTRACT_NAME, URL_PATH, EPG_STATE } from '../constants';
-import ENV_CONFIG from '../config/environmentConfig/index';
+import ENV_CONFIG from '../config/environment/index';
 import store from '../app/store';
 
 /**

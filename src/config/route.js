@@ -1,8 +1,8 @@
 import {URL_PATH} from '../constants';
 
-import Home from '../app/components/views/Home';
+import Home from '../app/components/landing/Home';
 
-import {getHomeContent} from '../app/components/views/Home/action';
+import {getHomeContent} from '../app/components/landing/Home/action';
 
 import {getConfigData,loginWithCookie} from '../app/actions';
 

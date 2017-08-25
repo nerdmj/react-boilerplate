@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 //views
-// import HomeReducer from './components/views/Home/reducer';
+// import HomeReducer from './components/landing/Home/reducer';
 //container
 
 import {ACTION} from '../constants';

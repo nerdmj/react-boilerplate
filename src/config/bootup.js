@@ -1,4 +1,4 @@
-import ENV_CONFIG from '../config/environmentConfig/index';
+import ENV_CONFIG from '../config/environment/index';
 import {getUser} from '../utils/common';
 import store from '../app/store';
 import {logout} from '../app/actions';

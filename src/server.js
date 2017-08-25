@@ -1,10 +1,10 @@
 'use strict';
 
-import ENV_CONFIG from '../src/config/environmentConfig/index';
+import ENV_CONFIG from '../src/config/environment/index';
 const ssrEnable = ENV_CONFIG.SSR;
 require('dotenv').config();
 import { StaticRouter } from 'react-router'
-import {getHomeContent} from './app/components/views/Home/action';
+import {getHomeContent} from './app/components/landing/Home/action';
 import Main from './app/components'
 import {preLoadStore} from './utils/routeHelper';
 import cookie from './utils/react-cookies';

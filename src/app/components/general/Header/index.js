@@ -33,7 +33,7 @@ class Header extends Component {
     
     render = () => {
         return (
-        <span>Header Section</span>
+            <header>Header Section</header>
         );
     }
 }

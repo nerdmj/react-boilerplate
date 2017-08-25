@@ -1,3 +1,2 @@
-
 export routes from './route';
-export ENV_CONFIG from './environmentConfig/index';
+export ENV_CONFIG from './environment/index';
