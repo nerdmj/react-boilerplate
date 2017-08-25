@@ -32,8 +32,7 @@ const commonReducer = (state = {isLoading: false,pendingTask:{}}, action) => {
 };
 
 export default {
-    common:commonReducer,
-    config:configReducer,
+    //common:commonReducer,
+    //config:configReducer,
     // homeData: HomeReducer,
-
 };

@@ -1,6 +1,3 @@
-/**
- * Created by intelligrape on 3/7/17.
- */
 'use strict'
 
 import cookie from 'cookie';

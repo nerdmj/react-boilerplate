@@ -8,8 +8,7 @@ import { createRoute } from '../../utils/routeHelper';
 import Header from './general/Header';
 import Footer from './general/Footer';
 import Router from './Router';
-import { TRANSLATIONS } from '../../constants/translations';
-import customStyles from '../../scss/modalStyle';
+
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -21,7 +20,7 @@ class Main extends Component {
         return (
             <Router>
                 <div>
-                    <Header translations={TRANSLATIONS} />
+                    <Header />
 
                     <div className="main_container">
                         <section className="body_container">

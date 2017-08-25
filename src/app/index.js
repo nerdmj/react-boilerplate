@@ -21,7 +21,7 @@ import ReactGA from 'react-ga';
 // import 'wowjs/css/libs/animate.css';
 
 //Importing Global styles
-import '../scss/core.scss';
+import '../styles/core.scss';
 
 // Importing Material JS lib
 // import 'material-design-lite/material.min.js';

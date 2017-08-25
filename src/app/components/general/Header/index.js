@@ -4,10 +4,6 @@ import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import _ from 'lodash';
 
-import {URL} from '../../../../constants/routes';
-//Importing Styles
-import './style.scss';
-
 class Header extends Component {
     constructor(props) {
         super(props);
