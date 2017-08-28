@@ -67,14 +67,20 @@ const config = {
                 use: 'babel-loader',
             }, {
                 test: /\.(scss|css)$/,
-                include: [
-                    path.resolve(__dirname, '../src/styles'),
+                exclude: [
+                    path.resolve(__dirname, '../src/app'),
                 ],
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader'],
                 }),
-            },  {
+            },{
+                test: /\.(scss|css)$/,
+                include: [
+                    path.resolve(__dirname, '../src/app'),
+                ],
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            }, {
                 test: /\.json$/,
                 use: 'json-loader',
             }, {
