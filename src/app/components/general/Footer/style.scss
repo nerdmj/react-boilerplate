@@ -1,3 +1,23 @@
 footer {
-    font-size: 24px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #666666;
+  background-color: #fafafa;
+  padding: 20px 0;
+  .footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid #eeeeee;
+    .footer-menu {
+      padding: 0 0 20px;
+    }
+  }
+  li {
+    display: inline-block;
+    a {
+      padding: 0 5px;
+      line-height: 13.33px;
+      color: #666666;
+    }
+  }
 }
