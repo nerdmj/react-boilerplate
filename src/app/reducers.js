@@ -18,21 +18,21 @@ const configReducer = (state = {}, action) => {
 
 const commonReducer = (state = {isLoading: false,pendingTask:{}}, action) => {
     switch (action.type) {
-        case ACTION.SHOW_MAIN_LOADER :
+        /*case ACTION.SHOW_MAIN_LOADER :
             return {...state,  isLoading: true};
         case ACTION.HIDE_MAIN_LOADER :
             return {...state,  isLoading: false};
         case ACTION.ADD_PENDING_TASK :
             return {...state,  pendingTask: action.data};
         case ACTION.REMOVE_PENDING_TASK :
-            return {...state,  pendingTask: {}};
+            return {...state,  pendingTask: {}};*/
         default:
             return state;
     }
 };
 
 export default {
-    //common:commonReducer,
+    common:commonReducer,
     //config:configReducer,
     // homeData: HomeReducer,
 };

@@ -49,11 +49,6 @@ if (process.env.NODE_ENV === 'production') {
   // server.use(morgan('combined'));
 }
 
-server.get('/versionInfo.txt', (req, res, next) => {
-    res.send(`Current Version: 1.1.1`);
-});
-
-
 server.get('*', (req, res, next) => {
   const b = benchmark("Server side Rendering for URL: " + req.url);
   // cookie.plugToRequest(req, res);

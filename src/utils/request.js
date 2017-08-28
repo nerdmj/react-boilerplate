@@ -1,6 +1,5 @@
 import fetch from 'isomorphic-fetch';
 import store from '../app/store';
-import {logout} from '../app/actions';
 
 /**
  * Parses the JSON returned by a network request
@@ -46,16 +45,13 @@ function toQueryString(obj) {
  *
  * @return {object}           The response data
  */
-export default function request({url, options, auth = false, contentType = true, tempAccessToken=""}, query) {
-    let {auth:{user:{accessToken=tempAccessToken}} } = store.getState();
+export default function request({url, options, contentType = true}, query) {
     if(query) {
       url += '?' + toQueryString(query);
     }
     options.headers = options.headers || {};
     options.headers = {...options.headers,...commonHeader};
-    if((auth && accessToken)|| tempAccessToken) {
-        options.headers['Authorization'] = 'bearer '+accessToken;
-    }
+
     if(contentType){
       options.headers['content-type'] = 'application/json';
     }
