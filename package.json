@@ -19,7 +19,6 @@
     "build": "babel-node tools/run build",
     "build:qa": "cross-env NODE_ENV=qa npm run build -- --release",
     "build:uat": "cross-env NODE_ENV=uat npm run build -- --release",
-    "build:qa2": "cross-env NODE_ENV=qa2 npm run build -- --release",
     "build:production": "cross-env NODE_ENV=production npm run build -- --release"
   },
   "author": "HDFC-MF-WEB",

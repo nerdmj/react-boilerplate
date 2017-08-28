@@ -2,10 +2,7 @@
 let environment = (process.env.NODE_ENV).toString().trim().toLowerCase();
 switch (environment) {
   case 'production' :
-    environment = 'production';
-    break;
-  case 'qa2' :
-    environment = 'qa2';
+    environment = 'prod';
     break;
   case 'uat' :
     environment = 'uat';
@@ -14,7 +11,7 @@ switch (environment) {
     environment = 'qa';
     break;
   default :
-    environment = 'uat';
+    environment = 'dev';
 }
 
 // if (!process.env.BROWSER){

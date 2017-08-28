@@ -10,7 +10,7 @@ import store from '../app/store';
 import {Provider} from 'react-redux';
 import { BrowserRouter, StaticRouter,Route, Switch} from 'react-router-dom';
 import {ENV_CONFIG} from '../config';
-import ReactGA from 'react-ga';
+//import ReactGA from 'react-ga';
 
 // ReactGA.initialize(ENV_CONFIG.GA.KEY, { debug: true });
 // import $ from 'jquery';
