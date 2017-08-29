@@ -18,7 +18,7 @@ class Main extends Component {
     };
 
     render() {
-        console.log("routes>>>",routes)
+        
         return (
             <Router>
                 <div>
