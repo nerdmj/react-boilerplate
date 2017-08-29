@@ -4,5 +4,5 @@ export const URL = {
 
 export default {
     DEFAULT : `/`,
-    ABOUT_US : `/${URL.ABOUT_US}/:id`,
+    ABOUT_US : `/${URL.ABOUT_US}`,
 }
