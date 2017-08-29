@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Switch } from 'react-router-dom';
 
-import { routes, ENV_CONFIG } from '../../config';
-import { createRoute } from '../../utils/routeHelper';
+
 import Header from './general/Header';
 import Footer from './general/Footer';
+import { routes, ENV_CONFIG } from '../../config';
+import { createRoute } from '../../utils/routeHelper';
 import Router from './Router';
 
 class Main extends Component {
@@ -17,6 +18,7 @@ class Main extends Component {
     };
 
     render() {
+        console.log("routes>>>",routes)
         return (
             <Router>
                 <div>

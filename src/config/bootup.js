@@ -1,9 +1,6 @@
 import ENV_CONFIG from '../config/environment/index';
 import store from '../app/store';
-import {logout} from '../app/actions';
-import {updateUserDetails} from '../app/components/containers/Modal/Auth/action';
 import cookie from '../utils/react-cookies';
-import {USER_STATUS} from '../constants';
 
 
 // const mixpanel = () => {

@@ -1,20 +1,16 @@
 import {URL_PATH} from '../constants';
 
 import Home from '../app/components/landing/Home';
+import PrivacyPolicy from '../app/components/landing/PrivacyPolicy';
 
-import {getHomeContent} from '../app/components/landing/Home/action';
-
-import {getConfigData,loginWithCookie} from '../app/actions';
-
-const initlLoadAction = [
-    getConfigData
-];
 
 export default [
     {
+        path: `/privacy-policy`,
+        component: PrivacyPolicy,
+    },
+    {
         path: `${URL_PATH.DEFAULT}`,
         component: Home,
-        loadData: [...initlLoadAction,getHomeContent],
-        // decorator:"PrivateRoute"
-    },
+    }
 ];
