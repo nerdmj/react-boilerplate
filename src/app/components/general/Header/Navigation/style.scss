@@ -1,0 +1,13 @@
+.navigation {
+  float: left;
+  li {
+    float: left;
+    a {
+      padding: 5px 10px;
+      line-height: 22px;
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+}

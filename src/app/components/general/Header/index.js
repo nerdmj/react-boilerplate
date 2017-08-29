@@ -4,6 +4,8 @@ import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import _ from 'lodash';
 
+import Navigation from './Navigation';
+import ActionMenu from './ActionMenu';
 import './style.scss';
 
 class Header extends Component {
@@ -34,18 +36,10 @@ class Header extends Component {
     
     render = () => {
         return (
-            <header>
+            <header className="clearfix">
                 <a href="#" className="logo"><img src="./images/logo.jpg" alt="" /></a>
-                <div className="navbar">
-                    <ul>
-                        <li>Learn</li>
-                        <li>Invest</li>
-                        <li>Investor</li>
-                        <li>Desk</li>
-                        <li>Distributor</li>
-                        <li>Desk</li>
-                    </ul>
-                </div>
+                <Navigation />
+                <ActionMenu />
             </header>
         );
     }

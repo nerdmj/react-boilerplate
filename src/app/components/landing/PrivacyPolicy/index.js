@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
+import './style.scss';
 
 class PrivacyPolicy extends Component {
     render() {

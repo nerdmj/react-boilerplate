@@ -18,17 +18,17 @@ class Main extends Component {
     };
 
     render() {
-        console.log("routes>>>",routes)
+        
         return (
             <Router>
-                <div>
+                <div className="wrapper">
                     <Header />
 
-                    <div className="main_container">
+                    <section className="mainCtrl clearfix">
                         <Switch>
                             {createRoute(routes)}
                         </Switch>
-                    </div>
+                    </section>
 
                     <Footer />
                 </div>
