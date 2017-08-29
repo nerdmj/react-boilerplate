@@ -21,14 +21,14 @@ class Main extends Component {
         
         return (
             <Router>
-                <div>
+                <div className="wrapper">
                     <Header />
 
-                    <div className="main_container">
+                    <section className="mainCtrl clearfix">
                         <Switch>
                             {createRoute(routes)}
                         </Switch>
-                    </div>
+                    </section>
 
                     <Footer />
                 </div>

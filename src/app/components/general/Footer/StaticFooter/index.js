@@ -1,6 +1,3 @@
-/**
- * Created by TTND on 8/28/2017.
- */
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
